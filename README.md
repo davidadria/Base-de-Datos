@@ -11,3 +11,6 @@
 
 ## Diccionario de Datos
 [Ver aquí](https://github.com/davidadria/Base-de-Datos/blob/main/diccionarioDatos.md)
+
+## Archivo SQL
+[Ver aquí](https://github.com/davidadria/Base-de-Datos/blob/main/ac518.sql)
