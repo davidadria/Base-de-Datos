@@ -7,7 +7,7 @@
 * Tabla `CLIENTE`
     | **Columna**       | **TIPO  DE VARIABLE** | **RESTRICCIÓN**   | **Descripción**                                                               |    
     |-------------------|-----------------------|-------------------|---------------------------                                                    |
-    | nCliente          | `INT`                 | PK                | Identificación del cliente en el casino, creación automática, autoincremento  |
+    | nCliente          | `INT`                 | PK, AUTO_INCREMENT| Identificación del cliente en el casino, creación automática  |
     | nombre            | `VARCHAR(128)`        |                   | Nombre del cliente                                                            |
     | apellido1         | `VARCHAR(128)`        |                   | Primer apellido del cliente                                                   |
     | apellido2         | `VARCHAR(128)`        | NULL              | Segundo apellido del cliente **(Opcional)**                                   |
@@ -20,8 +20,8 @@
 * Tabla `ACCEDER`
     | **Columna**   | **Tipo de variable**  | **Restricción**   | **Descripción**                                                               |   
     |-----------    |-------------------    |-------------------|-----------                                                                    | 
-    | nCliente      | `INT`                 | PK, FK            | Identificación del cliente en el casino, creación automática, autoincremento  |
-    | nLocal        | `INT`                 | PK, FK            | Número identificador del local, codigo de autoincremento                      |
+    | nCliente      | `INT`                 | PK, FK            | Identificación del cliente en el casino  |
+    | nLocal        | `INT`                 | PK, FK            | Número identificador del local                      |
     | fechaAcceso   | `DATE`                |                   | Fecha del día que entro al casino el cliente                                  |
     | horaEntrada   | `TIME`                |                   | Hora en la que entró el cliente al casino                                     |
     | horaSalida    | `TIME`                |                   | Hora en la que salió el cliente del casino                                    |
@@ -31,13 +31,13 @@
         La clave ajena **nLocal** que proviene de la tabla `LOCAL`
 
         Restricción de borrado: Rechazar.
-
+  
         Restricción de modificación: Propagar.
 
 * Taula `LOCAL`
     | **Columna**   | **TIPO  DE VARIABLE**     | **RESTRICCIÓN**       | **DESCRIPCIÓN**                                                               |    
     |-----------    |-----------------------    |-------------------    |---------------                                                                |
-    | nLocal        | `INT`                     | PK                    | Número identificador del local, codigo de autoincremento                      |
+    | nLocal        | `INT`                     | PK, AUTO_INCREMENT    | Número identificador del local                      |
     | nombre        | `CHAR(128)`               |                       | Nombre del local                                                              |
     | aforo         | `INT`                     |                       | El número máximo de personas que puede haber dentro del local en el momento   |
     | horaApertura  | `TIME`                    |                       | Hora en la que el casino abre                                                 |
@@ -49,7 +49,7 @@
 * Taula `MAQUINA`
     | **Columna**       | **TIPO  DE VARIABLE** | **RESTRICCIÓN**   | **DESCRIPCIÓN**                                           |    
     |-----------        |-----------------------|-------------------|---------------                                            |
-    | codigoMaquina     | `INT`                 | PK                | Código de identificación de la máquina, número de serie   |
+    | codigoMaquina     | `INT`                 | PK, AUTO_INCREMENT| Código de identificación de la máquina, número de serie   |
     | fechaInstalacion  | `DATE`                |                   | Fecha de instalación de la máquina                        |
     | tipo              | `VARCHAR(64)`         |                   | Tipo de máquina                                           |
     | fabricante        | `VARCHAR(128)`        |                   | El nombre del fabricante                                  |
@@ -66,8 +66,8 @@
 * Taula `EMPLEADO`
     | **Columna**       | **TIPO  DE VARIABLE**     | **RESTRICCIÓN**       | **DESCRIPCIÓN**                                                       |    
     |-----------        |-----------------------    |-------------------    |---------------                                                        |
-    | nEmpleado         | `INT`                     | PK                    | Identificación del empleado en la empresa, codigo de autoincremento   |
-    | experencia        | `VARCHAR(512)`            |                       | La experencia del empleado                                            |
+    | nEmpleado         | `INT`                     | PK, AUTO_INCREMENT    | Identificación del empleado en la empresa|
+    | experencia        | `TEXT`                    |                       | La experencia del empleado                                            |
     | nombre            | `VARCHAR(128)`            |                       | Nombre del empleado                                                   |
     | apellido1         | `VARCHAR(128)`            |                       | Apellido del empleado                                                 |
     | apellido2         | `VARCHAR(128)`            | NULL                  | Segundo apellido del empleado **(Opcional)**                          |  
