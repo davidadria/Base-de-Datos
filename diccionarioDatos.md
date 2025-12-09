@@ -8,7 +8,7 @@
     | **Columna**       | **TIPO  DE VARIABLE** | **RESTRICCIÓN**   | **Descripción**                                                               |    
     |-------------------|-----------------------|-------------------|---------------------------                                                    |
     | nCliente          | `INT`                 | PK                | Identificación del cliente en el casino, creación automática, autoincremento  |
-    | nombre            | `VARCHAR(8)`        |                   | Nombre del cliente                                                            |
+    | nombre            | `VARCHAR(128)`        |                   | Nombre del cliente                                                            |
     | apellido1         | `VARCHAR(128)`        |                   | Primer apellido del cliente                                                   |
     | apellido2         | `VARCHAR(128)`        | NULL              | Segundo apellido del cliente **(Opcional)**                                   |
     | dineroCuenta      | `FLOAT`               | VNN               | Dinero que el cliente aporta para jugar. **(Debe ser mayor a 0)**             |
