@@ -120,7 +120,7 @@
     | **Columna**   | **TIPO  DE VARIABLE**     | **RESTRICCIÓN**   | **DESCRIPCIÓN**                                                   |    
     |-----------    |-----------------------    |-------------------|---------------                                                    |
     | codigoBarra   | `INT`                     | PK, AUTO_INCREMENT| Identificación de la barra                                        |
-    | capacidad     | `INT`                     | VNN               | Es el aforo máximo de personas en la barra **Obligatorio**        |
+    | capacidad     | `INT`                     | VNN               | Es el aforo máximo de personas en la barra **(Obligatorio)**        |
     | nLocal        | `INT`                     | FK                | Número de identificación del local, REFERENCIA a `LOCAL.nLocal`   |
     
     En la tabla `BARRA` encontramos las siguientes claves ajenas:
