@@ -4,7 +4,7 @@
 [Ver aquí](https://github.com/davidadria/Base-de-Datos/blob/main/casino.pdf)
 
 ## Modelo Entidad - Relación 
-[Ver aquí](https://github.com/davidadria/Base-de-Datos/blob/main/modeloEntidadRelacion.png)
+[Ver aquí](https://github.com/davidadria/Base-de-Datos/blob/main/modeloER.png)
 
 ## Modelo Relacional
 [Ver aquí](https://github.com/davidadria/Base-de-Datos/blob/main/modeloRelacional.png)
