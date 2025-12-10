@@ -11,7 +11,7 @@
     | nombre            | `VARCHAR(128)`        |                   | Nombre del cliente                                                    |
     | apellido1         | `VARCHAR(128)`        |                   | Primer apellido del cliente                                           |
     | apellido2         | `VARCHAR(128)`        | NULL              | Segundo apellido del cliente **(Opcional)**                           |
-    | dineroCuenta      | `FLOAT`               | VNN               | Dinero que el cliente aporta para jugar. **(Debe ser mayor a 0)**     |
+    | dineroCuenta      | `FLOAT`               | VNN               | Dinero que el cliente aporta para jugar **(Debe ser mayor a 0)**     |
     | fnac              | `DATE`                | VNN               | Edad del cliente **(Edad >=18)**                                      |
     | genero            | `ENUM`                | NULL              | Género del cliente (H, M, O) **(Opcional)**                           |
     | vip               | `TINYINT(1)`          | VNN               | Identificación por si el cliente es vip, por defecto no lo es         | 
@@ -91,7 +91,7 @@
     | **Columna**   | **TIPO  DE VARIABLE**     | **RESTRICCIÓN**   | **DESCRIPCIÓN**                                                                           |    
     |-----------    |-----------------------    |-------------------|---------------                                                                            |
     | nEmpleado     | `INT`                     | PK, FK            | Identificación del empleado en la empresa, REFERENCIA a `EMPLEADO.nEmpleado`              |
-    | puesto        | `VARCHAR(32)`             |                   | El puesto concreto que ocupa el trabajador (crupier en blackjack, poker, ruleta, etc...)  |
+    | puesto        | `VARCHAR(32)`             |                   | El puesto concreto que ocupa el trabajador (Crupier en Blackjack, Poker, Ruleta, etc...)  |
 
     En la tabla `CRUPIER` encontramos las siguientes claves ajenas:
         La clave ajena **nEmpleado** que proviene de la tabla `EMPLEADO`
@@ -148,7 +148,7 @@
     |-----------        |-----------------------    |-------------------|---------------                                                                    |
     | nMesa             | `INT`                     | PK, AUTO_INCREMENT| Número de la mesa                                                                 |
     | tipo              | `ENUM`                    |                   | El tipo de juego que se juega en la mesa, puede ser (BlackJack, Poker o Ruleta)   |
-    | capacidad         | `INT`                     | VNN               | La capacidad máxima de juegadores que puede avergar la mesa.**(Obligatorio)**     |
+    | capacidad         | `INT`                     | VNN               | La capacidad máxima de juegadores que puede avergar la mesa **(Obligatorio)**     |
     | nEmpleado         | `INT`                     | FK, VNN           | Identificación del empleado en la empresa, REFERENCIA a `CRUPIER.nEmpleado`       |
     | comienzoSesion    | `TIME`                    |                   | La hora cuando comienza la sesión de juego                                        |
     | finSesion         | `TIME`                    |                   | La hora cuando finaliza la sesión de juego                                        |
