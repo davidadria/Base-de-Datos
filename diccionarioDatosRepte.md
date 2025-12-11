@@ -105,7 +105,7 @@
     |-----------        |-----------------------    |-------------------|---------------                                                                |
     | nEmpleado         | `INT`                     | PK, FK            | Identificación del empleado en la empresa, REFERENCIA a `EMPLEADO.nEmpleado`  |
     | especializacion   | `VARCHAR(128)`            |                   | Bebida o servicio en el que el camarero tiene mejores resultados              |
-    | codigoBarra       | `INT`                     | FK                | Identificación de la barra, REFERENCIA a BARRA.codigoBarra                    |
+    | codigoBarra       | `INT`                     | FK                | Identificación de la barra, REFERENCIA a `BARRA.codigoBarra`                  |
     | fechaServicio     | `DATE`                    |                   | La fecha del servicio                                                         |    
 
     En la tabla `CAMARERO` encontramos las siguientes claves ajenas:
@@ -134,7 +134,7 @@
     | **Columna**   | **TIPO  DE VARIABLE** | **RESTRICCIÓN**   | **DESCRIPCIÓN**                                               |    
     |-----------    |-----------------------|-------------------|---------------                                                |
     | nomBebida     | `VARCHAR(64)`         | PK                | Nombre de la bebida                                           |
-    | codigoBarra   | `INT`                 | PK, FK            | Identificación de la barra, REFERENCIA a `BARRA.codigobarra`  |
+    | codigoBarra   | `INT`                 | PK, FK            | Identificación de la barra, REFERENCIA a `BARRA.codigoBarra`  |
 
      En la tabla `BEBIDA` encontramos las siguientes claves ajenas:
         La clave ajena **codigoBarra** que proviene de la tabla `BARRA`
