@@ -150,27 +150,14 @@
     | tipo              | `ENUM`                    |                   | El tipo de juego que se juega en la mesa, puede ser (BlackJack, Poker o Ruleta)   |
     | capacidad         | `INT`                     | VNN               | La capacidad máxima de juegadores que puede avergar la mesa **(Obligatorio)**     |
     | nEmpleado         | `INT`                     | FK, VNN           | Identificación del empleado en la empresa, REFERENCIA a `CRUPIER.nEmpleado`       |
+    | nLocal            | `INT`                     | FK, VNN           | Clave de identificacion del local, REFERENCIA a `LOCAL.nLocal`
     | comienzoSesion    | `TIME`                    |                   | La hora cuando comienza la sesión de juego                                        |
     | finSesion         | `TIME`                    |                   | La hora cuando finaliza la sesión de juego                                        |
 
     
     En la tabla `JUEGO` encontramos las siguientes claves ajenas:
         La clave ajena **nEmpleado** que proviene de la tabla `EMPLEADO`
-
-        Restricción de borrado: Rechazar.
-
-        Restricción de modificación: Propagar.
-
-* Tabla `CONTENER`
-    | **Columna**   | **TIPO  DE VARIABLE**     | **RESTRICCIÓN**   | **DESCRIPCIÓN**                                                   |    
-    |-----------    |-----------------------    |-------------------|---------------                                                    |
-    | nLocal        | `INT`                     | PK, FK            | Número de identificación del local, REFERENCIA a `LOCAL.nLocal`   |
-    | nMesa         | `INT`                     | PK, FK            | Número de la mesa, REFERENCIA a `JUEGO.nMesa`                     |
-
-        
-    En la tabla `CONTENER` encontramos las siguientes claves ajenas:
         La clave ajena **nLocal** que proviene de la tabla `LOCAL`
-        La clave ajena **nMesa** que proviene de la tabla `JUEGO`
 
         Restricción de borrado: Rechazar.
 
