@@ -1,7 +1,7 @@
+--DML(DATA MANIPULATION LANGUAGE)---
 
 
-
-
+-- VALORES DE LA  TABLA EMPLEADO--
 INSERT INTO EMPLEADO (experencia, nombre, apellido1, apellido2, nSeguridadSocial, sueldo, turno, fechaInicio, fechaFin, nLocal) VALUES
 ('5 años en hostelería', 'Ana', 'López', NULL, 11111111, 1400.00, 'Mañana', '2025-01-01 08:00:00', NULL, 1),
 ('3 años en casinos', 'Luis', 'Martínez', 'García', 22222222, 1500.00, 'Noche', '2025-02-01 22:00:00', NULL, 1),
@@ -14,6 +14,8 @@ INSERT INTO EMPLEADO (experencia, nombre, apellido1, apellido2, nSeguridadSocial
 ('2 años en barra', 'Sofía', 'Navarro', NULL, 99999999, 1300.00, 'Tarde', '2025-09-01 16:00:00', NULL, 3),
 ('7 años en hostelería', 'David', 'López', 'Gil', 10101010, 1500.00, 'Mañana', '2025-10-01 08:00:00', NULL, 1);
 
+
+--VALORES DE LA TABLA CAMARERO--
 INSERT INTO CAMARERO (nEmpleado, especialiada) VALUES
 (1, 'Coctelería'),
 (3, 'Servicio de mesas'),
@@ -21,6 +23,7 @@ INSERT INTO CAMARERO (nEmpleado, especialiada) VALUES
 (7, 'Cocktails internacionales'),
 (9, 'Atención terraza');
 
+--VALORES DE LA TABLA CRUPIER--
 INSERT INTO CRUPIER (nEmpleado, funcionalidad, puesto) VALUES
 (2, 'Mesa de ruleta', 'Crupier principal'),
 (4, 'Mesa de póker', 'Crupier auxiliar'),
