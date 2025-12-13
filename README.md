@@ -20,4 +20,5 @@
 
 ## Presentación
 [Ver desde el Navegador](https://gvaedu-my.sharepoint.com/:p:/r/personal/davciomil_alu_edu_gva_es/Documents/RepteBD.pptx?d=w4f1e80555e874e3584abd0ccf5b85bd0&csf=1&web=1&e=tNxXCC)
-[Ver PDF](https://github.com/davidadria/Base-de-Datos/blob/main/repteDB.pdf)
+
+[Ver PDF](https://github.com/davidadria/Base-de-Datos/blob/main/RepteDB.pdf)
