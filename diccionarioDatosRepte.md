@@ -39,7 +39,9 @@
     | horaSalida    | `TIME`                |                   | Hora en la que salió el cliente del casino                    |
 
     En la tabla `ACCEDER` encontramos las siguientes claves ajenas:
+  
         La clave ajena **nCliente** que proviene de la tabla `CLIENTE`
+  
         La clave ajena **nLocal** que proviene de la tabla `LOCAL`
 
         Restricción de borrado: Rechazar.
@@ -109,7 +111,9 @@
     | fechaServicio     | `DATE`                    |                   | La fecha del servicio                                                         |    
 
     En la tabla `CAMARERO` encontramos las siguientes claves ajenas:
+  
         La clave ajena **nEmpleado** que proviene de la tabla `EMPLEADO`
+  
         La clave ajena **codigoBarra** que proviene de la tabla `BARRA`
 
         Restricción de borrado: Rechazar.
@@ -156,7 +160,9 @@
 
     
     En la tabla `JUEGO` encontramos las siguientes claves ajenas:
+  
         La clave ajena **nEmpleado** que proviene de la tabla `EMPLEADO`
+  
         La clave ajena **nLocal** que proviene de la tabla `LOCAL`
 
         Restricción de borrado: Rechazar.
