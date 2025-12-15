@@ -105,7 +105,7 @@ INSERT INTO BEBIDA (nomBebida, codigoBarra) VALUES
 ('Agua', 10);
 
 
--- EMPLEADO
+-- EMPLEADO  (CARLES)
 INSERT INTO EMPLEADO (experencia, nombre, apellido1, apellido2, nSeguridadSocial, sueldo, turno, fechaInicio, fechaFin, nLocal) VALUES
 ('3 años en casinos', 'Juan', 'Pérez', 'García', 'SS001', 1500.00, 'Manyana', '2023-01-10 09:00:00', '2025-12-31 18:00:00', 1),
 (NULL, 'Ana', 'Gómez', 'Ruiz', 'SS002', 1800.50, 'Tarde', '2022-03-15 14:00:00', '2025-01-01 00:00:00', 2),
@@ -119,7 +119,7 @@ INSERT INTO EMPLEADO (experencia, nombre, apellido1, apellido2, nSeguridadSocial
 (NULL, 'Sofía', 'Cruz', 'Luna', 'SS010', 1650.00, 'Manyana', '2022-12-01 08:00:00', NULL, 10);
 
 
--- CRUPIER
+-- CRUPIER  (CARLES)
 INSERT INTO CRUPIER (nEmpleado, puesto) VALUES
 (1, 'Jefe de mesa'),
 (2, NULL),
@@ -133,7 +133,7 @@ INSERT INTO CRUPIER (nEmpleado, puesto) VALUES
 (10, NULL);
 
 
--- CAMARERO
+-- CAMARERO  (CARLES)
 INSERT INTO CAMARERO (nEmpleado, especializacion, fechaServicio, codigoBarra) VALUES
 (1, 'Coctelería clásica', '2025-01-10', 1),
 (2, NULL, '2025-01-11', 2),
